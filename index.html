@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter App</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header-container">
+               <h1>Filter App
+                    <span class="logo"><i class="fas fa-paint-roller"></i></span>
+               </h1>
+              
+
+                <div class="upload-img">
+                    <p><label for="file" style="cursor: pointer;">
+                        <i class="far fa-plus-square"></i></label></p>
+                    <input type="file" accept="image/*" name="image" id="file" style="display: none;">
+                </div>
+        </div>
+
+        <div class="img-container">
+            <img id="output">
+        </div>
+        
+        
+
+         <div class="controls">
+                <div class="control sepia">
+                    <i class="fas fa-fill-drip"></i>
+                    <label for="sepia">sepia</label>
+                    <input id="sepia" type="range" name="sepia" min="0" max="100" value="0" data-sizing="%" >
+                </div>
+                <div class="control contrast">
+                    <i class="fas fa-adjust"></i>
+                    <label for="contrast">contrast</label>
+                    <input id="contrast" type="range" name="contrast" min="0" max="200" value="100" data-sizing="%" >
+                </div>
+                <div class="control brightness">
+                    <i class="far fa-sun"></i>
+                    <label for="brightness">brightness</label>
+                    <input id="brightness" type="range" name="brightness" min="0" max="200" value="100"data-sizing="%" >
+                </div>
+                <div class="control invert">
+                    <i class="fab fa-confluence"></i>
+                    <label for="invert">invert</label>
+                    <input id="invert" type="range" name="invert" min="0" max="100" value="0" data-sizing="%" >
+                </div>
+                <div class="control opacity">
+                    <i class="fas fa-clone"></i>
+                    <label for="opacity">opacity</label>
+                    <input id="opacity" type="range" name="opacity" min="0" max="100" value="100" data-sizing="%" >
+                </div>
+                <div class="control grayscale">
+                    <i class="fas fa-cube"></i>
+                    <label for="grayscale">grayscale</label>
+                    <input id="grayscale" type="range" name="grayscale" min="0" max="100" value="0" data-sizing="%" >
+                </div>
+            
+            </div>
+        
+    </div>
+     <script src="https://kit.fontawesome.com/b8a00d31c0.js" crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
